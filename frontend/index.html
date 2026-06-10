@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteKeeper - Мои заметки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 NoteKeeper</h1>
+        
+        <!-- Форма создания/редактирования -->
+        <div class="form-card">
+            <h2 id="form-title">Новая заметка</h2>
+            <input type="text" id="note-title" placeholder="Заголовок">
+            <textarea id="note-content" rows="5" placeholder="Текст заметки..."></textarea>
+            <input type="hidden" id="edit-id">
+            <button id="save-btn" class="btn-primary">Сохранить</button>
+            <button id="cancel-btn" class="btn-secondary" style="display:none">Отмена</button>
+        </div>
+
+        <!-- Список заметок -->
+        <div id="notes-list" class="notes-list">
+            <div class="loading">Загрузка заметок...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
